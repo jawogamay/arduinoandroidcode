@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:gauge="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserFragments.fragment_main">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="440dp"
+                    android:background="@drawable/shape_bg"
+                    android:layout_margin="10dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <TextView
+                                android:id="@+id/status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:layout_toLeftOf="@+id/status_icon"
+                                android:layout_centerVertical="true"
+                                android:text="Status:"/>
+
+                            <ImageView
+                                android:id="@+id/status_icon"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/ic_status_green"
+                                android:layout_marginEnd="5dp"
+                                />
+                        </RelativeLayout>
+                        <de.nitri.gauge.Gauge
+                            android:id="@+id/leak_gauge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_centerHorizontal="true"
+                            gauge:labelTextSize="42"
+                            gauge:maxValue="1000"
+                            gauge:minValue="0"
+                            gauge:totalNicks="120"
+                            gauge:valuePerNick="10" />
+                        <TextView
+                            android:id="@+id/lblValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gauge_value_bg"
+                            android:layout_marginEnd="70dp"
+                            android:layout_marginStart="70dp"
+                            android:text="0.0"
+                            android:fontFamily="@font/font_digital"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:textColor="@color/White"
+                            android:layout_below="@+id/leak_gauge"
+                            android:textSize="50dp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/lblDeviceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device Connected : "
+            android:textColor="@color/Gray"
+            android:layout_margin="2dp"/>
+
+        <TextView
+            android:id="@+id/lbldevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/White"
+            android:layout_margin="5dp"/>
+    </RelativeLayout>
+</FrameLayout>

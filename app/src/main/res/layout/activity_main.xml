@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/lbllogo"
+        android:layout_width="160dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
+        android:contentDescription=""
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gas Leak and Fire Detection System"
+        android:gravity="center"
+        android:layout_below="@+id/lbllogo"
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/loading"
+        android:background="@color/transparent"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Cool-Sina"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:layout_alignParentStart="true"/>
+
+
+
+</RelativeLayout>

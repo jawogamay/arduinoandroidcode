@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".GenActivity.ActivityLogin">
+    <ScrollView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo"
+                android:contentDescription=""
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gas Leak and Fire Detection System"
+                android:gravity="center"
+                android:textColor="@color/White"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/txtemail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_txtbox_bg"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_email_blue"
+                android:paddingLeft="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/darker_gray" />
+
+
+            <EditText
+                android:id="@+id/txtpassword"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Password"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/shape_txtbox_bg"
+                android:inputType="textPassword"
+                android:textColor="@android:color/darker_gray" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/forgot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="2dp"
+                    android:textColor="@color/White"
+                    android:text="@string/forgot_password"/>
+                <TextView
+                    android:id="@+id/lblforgotpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="2dp"
+                    android:layout_toRightOf="@+id/forgot"
+                    android:textColor="@color/Blue"
+                    android:text=" Click here"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dip"
+                android:background="@color/DodgerBlue"
+                android:textSize="20dp"
+                android:text="@string/login"
+                android:textColor="@android:color/white" />
+
+            <!-- Link to Login Screen -->
+
+            <Button
+                android:id="@+id/lblSignUp"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/Orange"
+                android:text="@string/register"
+                android:textColor="@color/White"
+                android:textSize="20dp"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

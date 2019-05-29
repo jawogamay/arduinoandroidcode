@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "246736919474",
+    "firebase_url": "https://cool-sina-97974.firebaseio.com",
+    "project_id": "cool-sina-97974",
+    "storage_bucket": "cool-sina-97974.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246736919474:android:2f923cbbbac0c761",
+        "android_client_info": {
+          "package_name": "com.teamcipher.mrfinman.coolsina"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246736919474-eaq7m570328i881d9087tak1aa4ahqj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvnsvlfplsBcUx8okGCD7IUorELyQr_PE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
